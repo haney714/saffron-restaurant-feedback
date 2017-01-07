@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dip" android:layout_gravity="top"
+    android:background="#1abc9c" 
+    android:textColor="#000000">
+           
+            <TableRow
+                android:paddingLeft="20dp"
+                android:paddingTop="5dip">
+
+                <TextView
+                    android:id="@+id/fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_span="1"
+                    android:text="qwdwkhkh hgq"
+                    android:textColor="#000000"
+                    android:textSize="20dip"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:paddingLeft="20dp"
+                android:paddingTop="5dip">
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginTop="3dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_weight="1"
+                    android:text="Overall Rating :"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/fAvg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="3dip"
+                    android:layout_weight="0"
+                    android:text="first"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+          
+</TableLayout>

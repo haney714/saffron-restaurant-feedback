@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1abc9c" >
+    
+<!-- Scroll to news contents -->               
+    <ScrollView
+        android:id="@+id/scrl_showitem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+                
+            </LinearLayout>
+
+            
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                   
+                <TextView
+                    android:id="@+id/saf_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:text="Name :" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                <TextView
+                	android:id="@+id/saf_email"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:textSize="20sp"
+                	android:text="Email :"
+                	android:textColor="#000000" />
+                    
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                 <TextView
+                	android:id="@+id/saf_quality"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:textSize="20sp"
+                	android:text="Quality :"
+                	android:textColor="#000000" />
+                    
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                 
+                 <TextView 
+                    android:id="@+id/saf_service" 
+               		android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:textSize="20sp"
+                	android:text="Service :"
+                	android:textColor="#000000"/>
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                <TextView
+                	android:id="@+id/saf_varity"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:textSize="20sp"
+                	android:text="Varity :"
+                	android:textColor="#000000" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                <TextView
+                	android:id="@+id/saf_money4val"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:textSize="20sp"
+                	android:text="Money For Value :"
+                	android:textColor="#000000" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                <TextView
+                	android:id="@+id/saf_overall_rat"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:textSize="20sp"
+                	android:text="Overall Rating :"
+                	android:textColor="#000000" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                <TextView
+                	android:id="@+id/saf_feedback"
+                	android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_margin="10dp"
+                	android:scrollHorizontally="true"
+                	android:textSize="20sp"
+                	android:text="Feedback :"
+                	android:textColor="#000000" />
+                    
+                </TableRow>
+            </TableLayout>
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+</RelativeLayout>

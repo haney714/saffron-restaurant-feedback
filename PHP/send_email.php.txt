@@ -1,0 +1,60 @@
+<?php
+
+// Define post fields into simple variables
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+$food_quality = $_POST['quality'];
+$food_varity = $_POST['varity'];
+$service = $_POST['service'];
+$money_for_value = $_POST['moneyForValue'];
+$feedback=$_POST['feedback'];
+
+$filename = "chk.txt";
+
+$file=fopen($filename,"w");
+$string=$food_quality.$food_varity.$service.$money_for_value.$feedback;
+fwrite($file,$string);
+fclose($file);
+
+
+/* Do some error checking on the form posted fields */
+/*
+if((!$first_name) || (!$last_name) || (!$email_address) || (!$username) || (!$branch)){
+	if(!$first_name){
+		echo "First Name is a required";
+	}
+	if(!$last_name){
+		echo "Last Name is a required";
+	}
+	if(!$email_address){
+		echo "Email Address is a required";
+	}
+	if(!$username){
+		echo "Username is a required";
+	}
+	exit(); // if the error checking has failed, we'll exit the script!
+}
+*/
+$email_address = "haney714@gmail.com";
+$subject = "Feedback from" + $name;
+   $message = "
+	feedback from $name
+	email address = $email
+	Food Quality = $food_quality
+	Food Varity = $food_varity
+	Services = $service
+	Money for Value = $money_for_value
+	Feedback = $feedback
+
+	Thanks!
+	
+	This is an automated response, please do not reply!";
+	
+	if(mail($email_address, $subject, $message, "From:Saffron Developer<haney1411@yahoo.com.au>\nX-Mailer: PHP/" . phpversion())){
+		echo "Register Successfull";
+	} else {
+	echo "Register Error";
+	}
+ 
+
+?>
